@@ -44,9 +44,9 @@ def train(max_iter, device="cpu"):
     max_iterations = wandb.config.max_iterations = max_iter
 
     learning_rate = wandb.config.learning_rate = LEARNING_RATE
-    weight_reg = wandb.config.weight_reg = 1
+    weight_reg = wandb.config.weight_reg = 2
     weight_noobj = wandb.config.weight_noobj = 1
-    weight_cls = wandb.config.weight_cls = 15
+    weight_cls = wandb.config.weight_cls = 4
 
     # run name (to easily identify model later)
     time_string = datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")
